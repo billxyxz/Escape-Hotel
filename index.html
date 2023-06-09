@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Escape Suites</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-cont">
+            <div class="logo">
+                <h3><a href="#welcome-section">Escape</a></h3>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#welcome-section">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+    <section id="welcome-section">
+        <div class="cont">
+            <h2>Weclome to <span>Escape</span></h2>
+            <p>Your comfort is our utmost priority</p>
+            <button class="btn modal-btn">Get Started</button>
+        </div>
+    </section>
+    <div class="modal-cont">
+        <div class="modal">
+            <form id="form">
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter a username" required>
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" placeholder="Enter a valid email address" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Enter password" required>
+                </div>
+                <button class="btn" id="submit">Submit</button>
+                <i class="fa fa-times remove" aria-hidden="true"></i>
+            </form>
+        </div>
+    </div>
+    <section id="about">
+        <div class="cont">
+            <h2 style="color: #19376D;">The Hotel</h2>
+            <div class="card">
+                <img src="images/pexels-fox-1082326.jpg" alt="Hotel Entrance">
+                <div class="desc">
+                    <h3>Here at Escape:</h3>
+                    <p class="animation">
+                        We are dedicated to giving you the best quality of service there is as our customer's satisfaction is our utmost priority.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed odio earum numquam perspiciatis eius, unde quia praesentium voluptate quod accusantium non distinctio sunt veniam provident. Aspernatur in nam vero eius.</p>
+                    <button class="btn read-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="cont">
+            <h2>Our Services</h2>
+            <div class="cards-cont">
+                <div class="cards animation">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <h4>Budget Friendly</h4>
+                    <p>Our rooms are priced with the "pocket's" of our customers at heart</p>
+                </div>
+                <div class="cards animation">
+                    <i class="fa fa-certificate" aria-hidden="true"></i>
+                    <h4>Quality Assured</h4>
+                    <p>Our rooms are priced with the "pocket's" of our customers at heart</p>
+                </div>
+                <div class="cards animation">
+                    <i class="fa fa-clock" aria-hidden="true"></i>
+                    <h4>Budget Friendly</h4>
+                    <p>Our rooms are priced with the "pocket's" of our customers at heart</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="cont">
+            <h2 style="color: #19376D;">Our Gallery</h2>
+            <div class="grid">
+                <div class="images">
+                    <img src="images/lobby-small.jpg" alt="room" class="view">
+                </div>
+                <div class="images">
+                    <img src="images/people-dinning-small.jpg" alt="room" class="view">
+                </div>
+                <div class="images">
+                    <img src="images/room-1-small.jpg" alt="room" class="view">
+                </div>
+                <div class="images">
+                    <img src="images/room-2-small.jpg" alt="room" class="view">
+                </div>
+                <div class="images">
+                    <img src="images/pool-small.jpg" alt="room" class="view">
+                </div>
+                <div class="images">
+                    <img src="images/room-3-small.jpg" alt="room" class="view">
+                </div>
+                <div class="images">
+                    <img src="images/hotel-bar-small.jpg" alt="room" class="view">
+                </div>
+                <div class="images">
+                    <img src="images/room-4-small.jpg" alt="room" class="view">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="gallery-modal">
+        <div class="modal-img">
+            <img src="" alt="" class="gallery-img">
+            <button class="left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <button class="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+        <button class="close">X</button>
+    </div>
+    <section id="contact">
+        <div class="cont">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum laboriosam nostrum sunt assumenda amet provident sapiente ipsam.</p>
+            </div>
+            <div class="container">
+                <div class="contacts box animate">
+                    <div class="cont-box">
+                        <div class="icon"><i class="fas fa-map-marker" aria-hidden="true"></i></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>22, Gaussians Luc Avenue consectetur adipisicing elit. Venezuela.</p>
+                        </div>
+                    </div>
+                    <div class="cont-box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+234-801-490-6244</p>
+                        </div>
+                    </div>
+                    <div class="cont-box">
+                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>tidycolls@xyz.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-cont">
+                    <div class="message box animate">
+                        <h3>Send Message</h3>
+                        <form action="#" id="msg-form">
+                            <div class="input">
+                                <input type="text" required>
+                                <span>Full Name</span>
+                            </div>
+                            <div class="input">
+                                <input type="email" required>
+                                <span>Email</span>
+                            </div>
+                            <div class="input">
+                                <textarea required></textarea>
+                                <span>Type your Message</span>
+                            </div>
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="cont">
+            <div class="row">
+                <div class="column">
+                    <h4>Escape Hotel</h4>
+                    <ul class="lists">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Get Help</h4>
+                    <ul class="lists">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Follow Us</h4>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>created 31st May 2023</p>
+            </div>  
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
