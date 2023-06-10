@@ -107,7 +107,7 @@ const galleryModal = () => {
     const leftBtn = document.querySelector(".left");
     const rightBtn = document.querySelector(".right")
 
-    let imagesArr = ["http://127.0.0.1:5500/images/lobby-large.jpg", "http://127.0.0.1:5500/images/people-dinning-large.jpg", "http://127.0.0.1:5500/images/room-1-large.jpg", "http://127.0.0.1:5500/images/room-2-large.jpg", "http://127.0.0.1:5500/images/pool-large.jpg", "http://127.0.0.1:5500/images/room-3-large.jpg", "http://127.0.0.1:5500/images/hotel-bar-large.jpg", "http://127.0.0.1:5500/images/room-4-large.jpg"]
+    let imagesArr = ["images/lobby-large.jpg", "images/people-dinning-large.jpg", "images/room-1-large.jpg", "images/room-2-large.jpg", "images/pool-large.jpg", "images/room-3-large.jpg", "images/hotel-bar-large.jpg", "images/room-4-large.jpg"]
 
    let i;
 
@@ -119,9 +119,10 @@ const galleryModal = () => {
 
             const link = image.src
             source = link.replace("small", "large");
-            view.src = source;
-            if(imagesArr.includes(view.src)){
-                i = imagesArr.indexOf(view.src);
+            let modified = source.replace("http://127.0.0.1:5500/", "");
+            view.src = modified;
+            if(imagesArr.includes(modified)){
+                i = imagesArr.indexOf(modified);
             }
             leftBtn.addEventListener("click", () => {
                 i--;
